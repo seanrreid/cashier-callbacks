@@ -27,7 +27,7 @@ function getChange(payment, total) {
   return change;
 }
 
-//const cashGivenToCashier = buyStuff(10, true);  // APPEARS synchronous, but isn't.
+// const cashGivenToCashier = buyStuff(10, true);  // APPEARS synchronous, but isn't.
 const cashGivenToCashier = buyStuffDelay(10, true); // Has a 10ms delay that makes the asynchronous runing obvious
 
 console.log("what is my change?", getChange(cashGivenToCashier, 10));
